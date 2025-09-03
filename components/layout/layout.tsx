@@ -14,7 +14,7 @@ export const Layout = ({ children, className }: LayoutProps) => {
     <div className="relative min-h-screen flex flex-col bg-white">
       <div className="bg-primary fixed inset-x-0 top-0 z-50 isolate">
         <Container className="text-white p-2 flex justify-between text-sm md:text-md">
-          <p className="w-55 md:w-96 text-sm">
+          <p className="w-50 md:w-96 text-sm">
             Urgence <span className="font-bold">électricité</span> ou{" "}
             <span className=" font-bold">plomberie</span> ? Intervention rapide
             7j/7
