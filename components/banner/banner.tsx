@@ -37,7 +37,7 @@ export const Banner = () => {
             ))}
           </div>
 
-          <h1 className="text-4xl font-airbnb text-primary lg:text-5xl font-medium leading-16 mb-4 font-ca-slalom coin-shimmer-responsive">
+          <h1 className="text-4xl font-airbnb text-primary lg:text-5xl font-medium leading-8 md:leading-16 mb-4 font-ca-slalom coin-shimmer-responsive">
             Du courant à l’eau, jusqu’au soleil, nous maîtrisons vos énergies.
           </h1>
 
