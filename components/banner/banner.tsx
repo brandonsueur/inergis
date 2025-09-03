@@ -1,15 +1,28 @@
+"use client";
+
 import { activities } from "@/constants/activities";
 import { Button } from "../button";
 import { Container } from "../container";
+import { motion } from "framer-motion";
 
 export const Banner = () => {
   return (
     <Container className="mt-52 z-10 mb-32">
       <div className="space-x-reverse md:grid md:grid-cols-12 gap-x-8 items-center">
         <div className="md:col-span-12 lg:col-span-7 xl:col-span-9">
-          <div className="flex gap-3 mb-4 ">
-            {activities.map((activity) => (
-              <div key={activity.id} className="flex items-center">
+          <div className="flex gap-3 mb-4">
+            {activities.map((activity, index) => (
+              <motion.div
+                key={activity.id}
+                className="flex items-center"
+                initial={{ opacity: 0, y: 20, x: -5 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: index * 0.2,
+                  ease: "easeOut",
+                }}
+              >
                 <div
                   className="w-4 h-4 rounded-full"
                   style={{
@@ -20,7 +33,7 @@ export const Banner = () => {
                 <span className="text-sm ml-2 font-airbnb font-medium text-primary">
                   {activity.label}
                 </span>
-              </div>
+              </motion.div>
             ))}
           </div>
 
