@@ -12,7 +12,7 @@ export const Footer: FC = () => {
           <Link href="/">
             <Image
               src="/logo-white.svg"
-              alt="SpendR Logo"
+              alt="Logo Inergis"
               width={140}
               height={45}
               className="h-10 w-auto"
@@ -33,7 +33,7 @@ export const Footer: FC = () => {
               >
                 <Image
                   src={`/socials/${social.icon}.svg`}
-                  alt="SpendR Logo"
+                  alt={`Logo Inergis ${social.label}`}
                   width={140}
                   height={45}
                   className="h-10 w-auto"
