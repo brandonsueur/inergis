@@ -28,7 +28,7 @@ export const Layout = ({ children, className }: LayoutProps) => {
         </Container>
       </div>
 
-      <div className="bg-white fixed inset-x-0 top-0 z-40 isolate mt-10">
+      <div className="bg-white fixed inset-x-0 top-0 z-40 isolate mt-9">
         <Menu />
       </div>
 

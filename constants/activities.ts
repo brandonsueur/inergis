@@ -3,6 +3,7 @@ import { Rocket } from "lucide-react";
 export type Activity = {
   id: string;
   name: string;
+  label: string;
   icon: React.ElementType;
   color: string;
   job: {
@@ -17,6 +18,7 @@ export const activities: Activity[] = [
   {
     id: "plumbing",
     name: "plomberie",
+    label: "Plomberie",
     icon: Rocket,
     color: "#044BFF",
     job: {
@@ -30,6 +32,7 @@ export const activities: Activity[] = [
   {
     id: "electricity",
     name: "electricite",
+    label: "Électricité",
     icon: Rocket,
     color: "#FFB700",
     job: {
@@ -44,6 +47,7 @@ export const activities: Activity[] = [
   {
     id: "chauffage",
     name: "chauffage",
+    label: "Chauffage",
     icon: Rocket,
     color: "#EC4545",
     job: {
@@ -57,6 +61,7 @@ export const activities: Activity[] = [
   {
     id: "energy-renewable",
     name: "énergie renouvelable",
+    label: "Énergie renouvelable",
     icon: Rocket,
     color: "#00B300",
     job: {
