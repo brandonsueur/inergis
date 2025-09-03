@@ -1,30 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "../button";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { navigationsLinks } from "@/constants";
 
 export const Menu = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const checkDarkMode = () => {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      setIsDarkMode(mediaQuery.matches);
-    };
-
-    checkDarkMode();
-
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    mediaQuery.addEventListener("change", checkDarkMode);
-
-    return () => mediaQuery.removeEventListener("change", checkDarkMode);
-  }, []);
-
   return (
-    <header className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+    <header className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center mt-8 mb-4">
       {/* Logo */}
       <Link href="/">
         <Image

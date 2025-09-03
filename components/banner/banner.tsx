@@ -3,7 +3,7 @@ import { Container } from "../container";
 
 export const Banner = () => {
   return (
-    <Container className="mt-38 z-10 mb-52">
+    <Container className="mt-52 z-10 mb-52">
       <div className="space-x-reverse md:grid md:grid-cols-12 gap-x-8 items-center">
         <div className="md:col-span-12 lg:col-span-7 xl:col-span-9">
           <h1 className="text-4xl font-airbnb text-primary lg:text-5xl font-medium leading-none mb-4 font-ca-slalom coin-shimmer-responsive">
