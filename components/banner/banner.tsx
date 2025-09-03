@@ -10,7 +10,7 @@ export const Banner = () => {
     <Container className="mt-52 z-10 mb-32">
       <div className="space-x-reverse md:grid md:grid-cols-12 gap-x-8 items-center">
         <div className="md:col-span-12 lg:col-span-7 xl:col-span-9">
-          <div className="flex gap-3 mb-4">
+          <div className="flex gap-3 mb-4 flex-wrap">
             {activities.map((activity, index) => (
               <motion.div
                 key={activity.id}

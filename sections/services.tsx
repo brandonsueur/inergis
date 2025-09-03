@@ -32,7 +32,7 @@ export const Services: FC = () => {
 
               <h3 className="text-xl font-medium  mt-8 mb-4">{value.label}</h3>
 
-              <p className="text-base font-epilogue text-md text-gray-400 leading-relaxed">
+              <p className="text-base font-epilogue text-md text-gray-500 leading-relaxed">
                 {value.bigDescription}
               </p>
             </div>
