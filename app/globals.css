@@ -4,3 +4,65 @@
   --color-primary: #18306c;
   --color-secondary: #2b61ea;
 }
+
+@font-face {
+  font-family: "Airbnb Cereal";
+  src: url("/fonts/Airbnb/AirbnbCereal_W_Lt.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Airbnb Cereal";
+  src: url("/fonts/Airbnb/AirbnbCereal_W_Bk.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Airbnb Cereal";
+  src: url("/fonts/Airbnb/AirbnbCereal_W_Md.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Airbnb Cereal";
+  src: url("/fonts/Airbnb/AirbnbCereal_W_Bd.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Airbnb Cereal";
+  src: url("/fonts/Airbnb/AirbnbCereal_W_XBd.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Airbnb Cereal";
+  src: url("/fonts/Airbnb/AirbnbCereal_W_Blk.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-airbnb: "Airbnb Cereal", sans-serif;
+  --color-primary: #18306c;
+  --color-secondary: #2b61ea;
+}
+
+body {
+  font-family: var(--font-airbnb), Arial, sans-serif;
+}
+
+.font-airbnb {
+  font-family: var(--font-airbnb), "Airbnb Cereal", sans-serif !important;
+}

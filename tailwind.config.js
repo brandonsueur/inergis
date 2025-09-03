@@ -11,6 +11,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#18306C",
+        secondary: "#2B61EA",
+      },
+      fontFamily: {
+        airbnb: ["var(--font-airbnb)", "Airbnb Cereal", "sans-serif"],
       },
     },
   },

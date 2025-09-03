@@ -6,7 +6,7 @@ export const Banner = () => {
     <Container className="mt-38 z-10 mb-52">
       <div className="space-x-reverse md:grid md:grid-cols-12 gap-x-8 items-center">
         <div className="md:col-span-12 lg:col-span-7 xl:col-span-9">
-          <h1 className="text-5xl text-primary lg:text-6xl font-bold leading-none mb-4 font-ca-slalom coin-shimmer-responsive">
+          <h1 className="text-4xl font-airbnb text-primary lg:text-5xl font-medium leading-none mb-4 font-ca-slalom coin-shimmer-responsive">
             Du courant à l’eau, jusqu’au soleil, nous maîtrisons vos énergies.
           </h1>
 

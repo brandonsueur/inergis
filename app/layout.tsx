@@ -47,7 +47,7 @@ export default function RootLayout({
         <title>{project.title}</title>
       </head>
 
-      <body className={`antialiased`}>{children}</body>
+      <body className="antialiased font-airbnb">{children}</body>
     </html>
   );
 }
