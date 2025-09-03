@@ -24,7 +24,7 @@ export const Menu = () => {
   }, []);
 
   return (
-    <header className="relative z-50 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center mt-8">
+    <header className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
       {/* Logo */}
       <Link href="/">
         <Image
@@ -32,7 +32,7 @@ export const Menu = () => {
           alt="Logo Inergis"
           width={180}
           height={49}
-          className="h-10 w-auto"
+          className="h-10 w-auto z-40"
         />
       </Link>
 
