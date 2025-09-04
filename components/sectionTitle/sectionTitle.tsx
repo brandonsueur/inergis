@@ -35,7 +35,12 @@ export const SectionTitle = ({
       )}
 
       {title && (
-        <h1 className="text-3xl font-airbnb font-bold leading-14 text-primary">
+        <h1
+          className={clsx(
+            "text-3xl font-airbnb font-bold leading-14",
+            className
+          )}
+        >
           {title}
         </h1>
       )}

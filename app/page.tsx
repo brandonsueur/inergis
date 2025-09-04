@@ -1,6 +1,7 @@
 import { Banner } from "@/components/banner";
 
 import { Layout } from "@/components/layout";
+import { Innovation } from "@/sections/innovation";
 import { Services } from "@/sections/services";
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
       <Banner />
 
       <Services />
+
+      <Innovation />
     </Layout>
   );
 }

@@ -9,7 +9,7 @@ export const Banner = () => {
   return (
     <Container className="mt-52 z-10 mb-32">
       <div className="space-x-reverse md:grid md:grid-cols-12 gap-x-8 items-center">
-        <div className="md:col-span-12 lg:col-span-7 xl:col-span-9">
+        <div className="md:col-span-12 lg:col-span-9 xl:col-span-9">
           <div className="flex gap-3 mb-4 flex-wrap">
             {activities.map((activity, index) => (
               <motion.div
@@ -37,7 +37,7 @@ export const Banner = () => {
             ))}
           </div>
 
-          <h1 className="text-4xl font-airbnb text-primary lg:text-5xl font-medium leading-8 md:leading-16 mb-4 font-ca-slalom coin-shimmer-responsive">
+          <h1 className="text-4xl font-airbnb text-primary lg:text-5xl font-medium leading-12 md:leading-16 mb-4 font-ca-slalom coin-shimmer-responsive">
             Du courant à l’eau, jusqu’au soleil, nous maîtrisons vos énergies.
           </h1>
 
