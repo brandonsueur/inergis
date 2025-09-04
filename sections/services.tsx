@@ -36,20 +36,19 @@ export const Services: FC = () => {
 
   return (
     <Container>
+      <SectionTitle
+        subTitle="Services"
+        title="Du courant à l'eau, jusqu'au soleil"
+        description="Que ce soit pour une urgence, une mise aux normes, une rénovation ou l'installation d'équipements énergétiques, nous intervenons rapidement et efficacement."
+        centered
+        className="max-w-3xl mx-auto"
+      />
       <motion.div
         ref={ref}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
       >
-        <SectionTitle
-          subTitle="Services"
-          title="Du courant à l'eau, jusqu'au soleil"
-          description="Que ce soit pour une urgence, une mise aux normes, une rénovation ou l'installation d'équipements énergétiques, nous intervenons rapidement et efficacement."
-          centered
-          className="max-w-3xl mx-auto"
-        />
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {activities.map((value, index) => {
             const Icon = value.icon;
