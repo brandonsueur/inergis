@@ -51,7 +51,7 @@ export const socials = [
   {
     name: "instagram",
     icon: "instagram", // Assuming you have an Instagram icon
-    href: "https://www.instagram.com/inergis",
+    href: "https://www.instagram.com/inergis.sarl",
     label: "Instagram",
   },
 ];

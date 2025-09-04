@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navigationsLinks } from "@/constants";
+import { Button } from "../button";
 
 export const Menu = () => {
   return (
@@ -20,15 +21,30 @@ export const Menu = () => {
 
       {/* Navigation */}
       <nav className="flex items-center space-x-8 font-ca-slalom">
-        {navigationsLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="text-primary transition-colors"
-          >
-            {link.label}
-          </Link>
-        ))}
+        {navigationsLinks.map((link) => {
+          if (link.href == "/devis") {
+            return (
+              <Button
+                key={link.href}
+                onClick={() => {
+                  // Handle button click
+                }}
+              >
+                {link.label}
+              </Button>
+            );
+          }
+
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-primary transition-colors"
+            >
+              {link.label}
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );
