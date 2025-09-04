@@ -3,6 +3,7 @@
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
 import { SectionTitle } from "@/components/sectionTitle";
+import Link from "next/link";
 import { FC } from "react";
 
 export const Innovation: FC = () => {
@@ -33,7 +34,9 @@ export const Innovation: FC = () => {
         </p>
 
         <div className="mx-auto mt-12 w-fit">
-          <Button>Demandez votre devis gratuit</Button>
+          <Link href="mailto:devis@inergis.fr">
+            <Button>Demandez votre devis gratuit</Button>
+          </Link>
         </div>
       </Container>
     </div>

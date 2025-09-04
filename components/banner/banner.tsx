@@ -4,6 +4,14 @@ import { activities } from "@/constants/activities";
 import { Button } from "../button";
 import { Container } from "../container";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
+const scrollToSection = (sectionId: string) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export const Banner = () => {
   return (
@@ -49,8 +57,15 @@ export const Banner = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button>Demandez votre devis gratuit</Button>
-            <Button variant="outline">Découvrir nos services</Button>
+            <Link href="mailto:devis@inergis.fr">
+              <Button>Demandez votre devis gratuit</Button>
+            </Link>
+            <Button
+              variant="outline"
+              onClick={() => scrollToSection("services")}
+            >
+              Découvrir nos services
+            </Button>
           </div>
         </div>
       </div>

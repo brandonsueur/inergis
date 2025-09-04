@@ -35,49 +35,53 @@ export const Services: FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <Container>
-      <SectionTitle
-        subTitle="Services"
-        title="Du courant à l'eau, jusqu'au soleil"
-        description="Que ce soit pour une urgence, une mise aux normes, une rénovation ou l'installation d'équipements énergétiques, nous intervenons rapidement et efficacement."
-        centered
-        className="max-w-3xl mx-auto"
-      />
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={containerVariants}
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-          {activities.map((value, index) => {
-            const Icon = value.icon;
-            return (
-              <motion.div
-                key={index}
-                className="relative p-6 flex flex-col items-start"
-                variants={itemVariants}
-                whileHover={{ transition: { duration: 0.2 } }}
-              >
-                <div
-                  className={`flex w-16 h-16 rounded-full justify-center items-center`}
-                  style={{
-                    background: value.color,
-                  }}
+    <section id="services">
+      <Container>
+        <SectionTitle
+          subTitle="Services"
+          title="Du courant à l'eau, jusqu'au soleil"
+          description="Que ce soit pour une urgence, une mise aux normes, une rénovation ou l'installation d'équipements énergétiques, nous intervenons rapidement et efficacement."
+          centered
+          className="max-w-3xl mx-auto"
+        />
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {activities.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <motion.div
+                  key={index}
+                  className="relative p-6 flex flex-col items-start"
+                  variants={itemVariants}
+                  whileHover={{ transition: { duration: 0.2 } }}
                 >
-                  <Icon size={24} strokeWidth={2} className="text-white" />
-                </div>
+                  <div
+                    className={`flex w-16 h-16 rounded-full justify-center items-center`}
+                    style={{
+                      background: value.color,
+                    }}
+                  >
+                    <Icon size={24} strokeWidth={2} className="text-white" />
+                  </div>
 
-                <h3 className="text-xl font-medium mt-8 mb-4">{value.label}</h3>
+                  <h3 className="text-xl font-medium mt-8 mb-4">
+                    {value.label}
+                  </h3>
 
-                <p className="text-base font-epilogue text-gray-500 leading-relaxed">
-                  {value.bigDescription}
-                </p>
-              </motion.div>
-            );
-          })}
-        </div>
-      </motion.div>
-    </Container>
+                  <p className="text-base font-epilogue text-gray-500 leading-relaxed">
+                    {value.bigDescription}
+                  </p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.div>
+      </Container>
+    </section>
   );
 };

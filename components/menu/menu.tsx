@@ -59,7 +59,7 @@ export const Menu = () => {
         {/* Navigation pour desktop */}
         <nav className="hidden md:flex items-center space-x-8 font-ca-slalom">
           {navigationsLinks.map((link) => {
-            if (link.href === "/devis") {
+            if (link.href.startsWith("mailto:")) {
               return (
                 <Button
                   key={link.href}
