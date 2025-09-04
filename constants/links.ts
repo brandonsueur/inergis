@@ -10,7 +10,7 @@ export type NavigationLink = {
 };
 
 export const navigationsLinks: NavigationLink[] = [
-  { href: "/services", label: "Nos services" },
+  { href: "#services", label: "Nos services" },
   { href: "mailto:contact@inergis.fr", label: "Contact" },
   { href: "mailto:devis@inergis.fr", label: "Un devis gratuit ?" },
 ];
@@ -22,9 +22,9 @@ export const footerConfig = {
       title: "Liens utiles",
       links: [
         { label: "Accueil", href: "/" },
-        { label: "Nos services", href: "/services" },
-        { label: "Devis gratuit", href: "/devis" },
-        { label: "Contact", href: "/contact" },
+        { label: "Nos services", href: "#services" },
+        { label: "Devis gratuit", href: "mailto:devis@inergis.fr" },
+        { label: "Contact", href: "mailto:contact@inergis.fr" },
       ],
     },
     {
