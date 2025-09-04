@@ -61,14 +61,9 @@ export const Menu = () => {
           {navigationsLinks.map((link) => {
             if (link.href.startsWith("mailto:devis")) {
               return (
-                <Button
-                  key={link.href}
-                  onClick={() => {
-                    // Handle button click
-                  }}
-                >
-                  {link.label}
-                </Button>
+                <Link key={link.href} href={link.href}>
+                  <Button>{link.label}</Button>
+                </Link>
               );
             }
 
