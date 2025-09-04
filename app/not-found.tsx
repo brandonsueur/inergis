@@ -10,8 +10,10 @@ export default function NotFound() {
     <Layout>
       <Container className="mt-40 mb-20 flex flex-col items-center">
         <div className="flex flex-col items-center text-center mb-16">
-          <span className="text-8xl font-ca-slalom font-bold text-secondary">404</span>
-          
+          <span className="text-8xl font-ca-slalom font-bold text-secondary">
+            404
+          </span>
+
           <PageTitle
             title="Page non trouvée"
             subTitle="Erreur"
@@ -21,17 +23,15 @@ export default function NotFound() {
 
           <div className="mt-8 max-w-xl text-lg text-gray-500">
             <p>
-              Nous sommes désolés, mais la page que vous avez demandée n&apos;existe pas ou a été déplacée.
-              Veuillez vérifier l&apos;URL ou revenir à la page d&apos;accueil.
+              Nous sommes désolés, mais la page que vous avez demandée
+              n&apos;existe pas ou a été déplacée. Veuillez vérifier l&apos;URL
+              ou revenir à la page d&apos;accueil.
             </p>
           </div>
 
           <div className="mt-10">
             <Link href="/" passHref>
-              <Button 
-                variant="primary" 
-                size="lg"
-              >
+              <Button variant="primary" size="lg">
                 Retour à l&apos;accueil
               </Button>
             </Link>
@@ -43,15 +43,17 @@ export default function NotFound() {
             Besoin d&apos;aide ?
           </h3>
           <p className="text-gray-500 mb-4">
-            Si vous avez des questions ou si vous cherchez une information spécifique, 
-            n&apos;hésitez pas à nous contacter.
+            Si vous avez des questions ou si vous cherchez une information
+            spécifique, n&apos;hésitez pas à nous contacter.
           </p>
           <div className="flex flex-col space-y-2">
             <p className="text-sm text-gray-600">
-              <strong>Email:</strong> {project.contact?.email || "contact@inergis.fr"}
+              <strong>Email:</strong>{" "}
+              {project.contact?.email || "contact@inergis.fr"}
             </p>
             <p className="text-sm text-gray-600">
-              <strong>Téléphone:</strong> {project.contact?.phone || "03 XX XX XX XX"}
+              <strong>Téléphone:</strong>{" "}
+              {project.contact?.phone || "03 XX XX XX XX"}
             </p>
           </div>
         </div>
