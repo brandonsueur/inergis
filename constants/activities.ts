@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import { Flame, Leaf, Plug2, Wrench } from "lucide-react";
 
 export type Activity = {
   id: string;
@@ -19,7 +19,7 @@ export const activities: Activity[] = [
     id: "plumbing",
     name: "plomberie",
     label: "Plomberie",
-    icon: Rocket,
+    icon: Wrench,
     color: "#044BFF",
     job: {
       title: "Plombier",
@@ -33,7 +33,7 @@ export const activities: Activity[] = [
     id: "electricity",
     name: "electricite",
     label: "Électricité",
-    icon: Rocket,
+    icon: Plug2,
     color: "#FFB700",
     job: {
       title: "Électricien",
@@ -48,7 +48,7 @@ export const activities: Activity[] = [
     id: "chauffage",
     name: "chauffage",
     label: "Chauffage",
-    icon: Rocket,
+    icon: Flame,
     color: "#EC4545",
     job: {
       title: "Chauffagiste",
@@ -62,7 +62,7 @@ export const activities: Activity[] = [
     id: "energy-renewable",
     name: "énergie renouvelable",
     label: "Énergie renouvelable",
-    icon: Rocket,
+    icon: Leaf,
     color: "#00B300",
     job: {
       title: "Spécialiste en énergie renouvelable",

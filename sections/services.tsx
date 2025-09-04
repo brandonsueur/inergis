@@ -22,12 +22,12 @@ export const Services: FC = () => {
           return (
             <div key={index} className="relative p-6 flex flex-col items-start">
               <div
-                className={`flex w-20 h-20 rounded-full justify-center items-center`}
+                className={`flex w-18 h-18 rounded-full justify-center items-center`}
                 style={{
                   background: value.color,
                 }}
               >
-                <Icon size={18} strokeWidth={2} className="text-white" />
+                <Icon size={24} strokeWidth={2} className="text-white" />
               </div>
 
               <h3 className="text-xl font-medium  mt-8 mb-4">{value.label}</h3>
