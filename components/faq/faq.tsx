@@ -13,7 +13,31 @@ interface FAQItem {
   answer: string | string[] | React.ReactElement;
 }
 
-const faqData: FAQItem[] = [];
+const faqData: FAQItem[] = [
+  {
+    id: "toto-1",
+    question: "Vos devis sont-ils vraiment gratuits ?",
+    answer:
+      "Oui, nos devis sont entièrement gratuits et sans engagement. Vous pouvez nous contacter pour une simple estimation, que ce soit pour une intervention en électricité, en plomberie ou pour un projet d’énergies renouvelables, sans aucun frais caché. Notre objectif est de vous accompagner dans votre projet en toute confiance. Le devis gratuit est une première étape pour établir une relation basée sur la transparence, la fiabilité et le respect de votre budget.",
+  },
+  {
+    id: "toto-2",
+    question: "Que faire en cas d’urgence (panne électrique, fuite d’eau) ?",
+    answer:
+      "En cas d’urgence, nous vous conseillons de nous contacter immédiatement. Notre équipe est disponible 24/7 pour répondre à vos besoins urgents en électricité, plomberie ou autres services. Nous mettons tout en œuvre pour intervenir rapidement et résoudre votre problème dans les meilleurs délais.",
+  },
+  {
+    id: "toto-3",
+    question: "Quels types de services proposez-vous ?",
+    answer: (
+      <ul className="list-disc list-inside space-y-2">
+        <li>Interventions en électricité</li>
+        <li>Services de plomberie</li>
+        <li>Projets d’énergies renouvelables</li>
+      </ul>
+    ),
+  },
+];
 
 export function FAQ() {
   const [openItems, setOpenItems] = useState<Set<string>>(new Set(["toto-1"]));
@@ -29,14 +53,12 @@ export function FAQ() {
   };
 
   return (
-    <section className="py-16 px-6 text-white">
+    <section className="py-16 px-6">
       <Container>
         <SectionTitle
           subTitle="FAQ"
-          title="Your questions, our answers"
-          description="Whether it is about our services, our approach, or the technical details of our
-                    services, you will find all the essential information here. Please do not hesitate to contact us if you require further information."
-          centered
+          title="Questions fréquentes"
+          description="Retrouvez ici les réponses aux questions que nos clients nous posent le plus souvent, pour vous aider à mieux comprendre nos services et nos engagements."
         />
 
         {/* FAQ Items */}
@@ -55,16 +77,16 @@ export function FAQ() {
                   <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center">
                     <motion.div className="text-black font-bold text-lg">
                       {openItems.has(item.id) ? (
-                        <SquareArrowDownRight className="text-yellow-400" />
+                        <SquareArrowDownRight className="text-secondary" />
                       ) : (
-                        <SquareArrowRight className="text-black dark:text-white" />
+                        <SquareArrowRight className="text-black" />
                       )}
                     </motion.div>
                   </div>
                   <h3
                     className={clsx(
-                      "text-black dark:text-white text-xl font-semibold font-ca-slalom",
-                      openItems.has(item.id) ? "text-yellow-400" : ""
+                      "text-black text-xl font-semibold font-ca-slalom",
+                      openItems.has(item.id) ? "text-secondary" : ""
                     )}
                   >
                     {item.question}
@@ -102,20 +124,17 @@ export function FAQ() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden border-t border-[#4A4A4A]"
                   >
-                    <div className="p-6 bg-white dark:bg-black">
+                    <div className="p-6 bg-white ">
                       {Array.isArray(item.answer) ? (
                         <div className="space-y-4">
                           {item.answer.map((paragraph, idx) => (
-                            <p
-                              key={idx}
-                              className="text-black dark:text-gray-300 font-epilogue"
-                            >
+                            <p key={idx} className="text-black font-epilogue">
                               {paragraph}
                             </p>
                           ))}
                         </div>
                       ) : (
-                        <p className="text-black dark:text-gray-300 font-epilogue">
+                        <p className="text-gray-500 font-epilogue">
                           {item.answer}
                         </p>
                       )}
