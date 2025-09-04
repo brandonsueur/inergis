@@ -27,27 +27,23 @@ export const PageTitle = ({
       {subTitle && (
         <span
           className={clsx(
-            "text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+            "text-sm font-semibold text-secondary bg-clip-text ",
             {
               "text-white": reverse,
               "text-center": centered,
             }
           )}
         >
-          {typeof subTitle === "string" ? (
-            <span className="uppercase">{subTitle}</span>
-          ) : (
-            subTitle
-          )}
+          {typeof subTitle === "string" ? <span>{subTitle}</span> : subTitle}
         </span>
       )}
 
       {title && (
         <h1
           className={clsx(
-            "text-3xl md:text-5xl font-medium leading-10 md:leading-12 dark:text-white text-gray-900",
+            "text-3xl md:text-5xl font-medium leading-10 md:leading-12 text-primary",
             {
-              "dark:text-white text-gray-900": reverse,
+              "text-white": reverse,
               "text-center": centered,
             }
           )}
