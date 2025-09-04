@@ -17,7 +17,7 @@ export const Layout = ({ children, className }: LayoutProps) => {
           <p className="w-60 md:w-96 text-sm">
             Urgence <span className="font-bold">électricité</span> ou{" "}
             <span className=" font-bold">plomberie</span> ?{" "}
-            <span className="hidden md:flex">Intervention rapide 7j/7</span>
+            <span>Intervention rapide 7j/7</span>
           </p>
 
           <a href="tel:0365889783" className="flex items-center gap-4">
