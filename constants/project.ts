@@ -60,11 +60,11 @@ export const project = {
   url: "https://inergis.fr",
   siteName: "Inergis",
   title:
-    "Inergis - Spécialistes en électricité, plomberie et énergies renouvelables",
+    "Inergis - Spécialistes en électricité, plomberie, chauffage et énergies renouvelables",
   shortDescription:
-    "Spécialistes en électricité, plomberie et énergies renouvelables.",
+    "Spécialistes en électricité, plomberie, chauffage et énergies renouvelables.",
   description:
-    "Spécialistes en électricité, plomberie et énergies renouvelables, nous vous accompagnons dans tous vos projets, de l’installation à la rénovation. Fiabilité, performance et respect de l’environnement sont au cœur de notre savoir-faire.",
+    "Spécialistes en électricité, plomberie, chauffage et énergies renouvelables, nous vous accompagnons dans tous vos projets, de l’installation à la rénovation. Fiabilité, performance et respect de l’environnement sont au cœur de notre savoir-faire.",
   keywords: keywords.join(", "),
   contact: {
     address: "26 RUE NEUVE, 80470 ARGŒUVES",

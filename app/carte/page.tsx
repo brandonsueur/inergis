@@ -56,9 +56,7 @@ export default function CarteVisitePage() {
                 height={60}
                 className="h-16 mx-auto mb-2"
               />
-              <p className="text-white">
-                Spécialistes en électricité, plomberie et énergies renouvelables
-              </p>
+              <p className="text-white">{project.description}</p>
             </div>
             <div className="p-6">
               <div className="space-y-4">
@@ -113,7 +111,8 @@ export default function CarteVisitePage() {
                       {project.contact.phone.replace(
                         /(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/,
                         "$1 $2 $3 $4 $5"
-                      )}
+                      )}{" "}
+                      / 06 40 87 15 53
                     </a>
                   </div>
                 </div>
