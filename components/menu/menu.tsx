@@ -40,7 +40,7 @@ export const Menu = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 mt-14 md:mt-9 ${
+      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 mt-12 md:mt-9 ${
         scrolled ? "bg-white shadow-md py-2" : "py-4"
       }`}
     >
