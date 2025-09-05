@@ -1,0 +1,7 @@
+
+@font-face{font-weight:400;font-family:Orpi;font-style:normal;font-display:fallback;src:url(/cdn/fonts/orpi/orpi-400.acf652ac.woff2) format("woff2"),url(/cdn/fonts/orpi/orpi-400.ccf9956f.woff) format("woff")}@font-face{font-weight:500;font-family:Orpi;font-style:normal;font-display:fallback;src:url(/cdn/fonts/orpi/orpi-500.68ac1da0.woff2) format("woff2"),url(/cdn/fonts/orpi/orpi-500.e5213cbb.woff) format("woff")}
+.footer a {
+	text-transform: uppercase;
+	margin: 0 6px !important;
+	display: inline-block;
+}

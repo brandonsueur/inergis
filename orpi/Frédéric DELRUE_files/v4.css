@@ -1,0 +1,1241 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,700,700i');
+
+/* hello, we search for freelance js/css coders, join us at ping@datamix.io */
+* {
+    outline: none;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    background: #fff;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+@media (min-width:861px) {
+    .lang {
+        position: fixed;
+        bottom: 175px;
+        right: 19%;
+        left: auto;
+    }
+}
+
+.cal_container {
+    padding: 0 40px;
+}
+
+.surlogo {
+    font-family: "IBM Plex Sans";
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: 24px;
+    margin: -4px 0 0;
+    text-align: center;
+}
+
+div.logo {
+    text-align: center;
+    margin: 0 50px 36px;
+}
+
+div.logo2 {
+    text-align: center;
+    margin: 25px 30px 25px;
+}
+
+div.logo2.loque {
+    text-align: center;
+    margin: 0 30px 25px;
+}
+
+div.logo2 img {
+    max-height: 140px;
+}
+
+span.insert_logo {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+@media (min-width:521px) {
+    span.insert_logo {
+        font-size: 22px;
+    }
+}
+
+.souslogo {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: 24px;
+    margin: -7px 0 2px;
+    text-align: center;
+}
+
+.Global {
+    padding: 0px;
+    margin: 0;
+    transition-duration: 0.6s;
+}
+
+.Global.behind {
+    opacity: 0.3;
+    /*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+*/
+}
+
+.Carte {
+    margin: 0;
+    min-width: 363px;
+    max-width: 470px;
+    text-align: center;
+    color: #000;
+}
+
+.Carte.avecNews {
+    margin: 25px auto;
+    max-width: 470px;
+    text-align: center;
+    color: #000;
+}
+
+@media (max-width:548px) {
+    .Carte {
+        margin: 0;
+    }
+
+    .Carte.avecNews {
+        margin: 0 0;
+    }
+}
+
+.Carte .Coord {
+    margin: 0 auto 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 32px;
+    padding: 64px 0 5px;
+    background: none;
+    color: inherit;
+    text-align: left;
+    z-index: 22;
+}
+
+.Carte .CoordCard {
+    margin: 0 auto 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 32px;
+    padding: 36px 30px 0 30px;
+    background: rgb(54, 111, 128);
+    background: rgba(54, 111, 128, 0.94);
+    color: #fff;
+    text-align: left;
+    z-index: 22;
+    border: 5px solid #fff;
+}
+
+.Carte .CoordCard a {
+    color: #fff;
+}
+
+.Carte .CoordCard input,
+.Carte .CoordCard textarea {
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    background: transparent;
+    padding: 10px 0 5px 15px;
+    margin: 3px 1px;
+    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-family: "IBM Plex Sans";
+}
+
+.Carte .CoordCard input:focus,
+.Carte .CoordCard textarea:focus {
+    border: 1px solid #fff;
+    font-family: "IBM Plex Sans";
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 7px;
+}
+
+.Carte .CoordCard .back {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 17px;
+    font-size: 14px;
+    font-family: "IBM Plex Sans";
+}
+
+.SecondSet {
+    margin-top: 8px;
+}
+
+.News iframe {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 32px;
+}
+
+.News iframe.video {
+    background: rgba(0, 0, 0);
+    height: 240px;
+}
+
+@media (max-width:500px) {
+    .News iframe.video {
+        height: 240px;
+    }
+}
+
+@media (max-width:480px) {
+    .News iframe.video {
+        height: 240px;
+    }
+}
+
+@media (max-width:460px) {
+    .News iframe.video {
+        height: 240px;
+    }
+}
+
+@media (max-width:440px) {
+    .News iframe.video {
+        height: 230px;
+    }
+}
+
+@media (max-width:420px) {
+    .News iframe.video {
+        height: 215px;
+    }
+}
+
+@media (max-width:400px) {
+    .News iframe.video {
+        height: 200px;
+    }
+}
+
+@media (max-width:352px) {
+    .News iframe.video {
+        height: 180px;
+    }
+}
+
+@media (max-width:320px) {
+    .News iframe.video {
+        height: 160px;
+    }
+}
+
+@media (max-width:300px) {
+    .News iframe.video {
+        height: 150px;
+    }
+}
+
+@media (max-width:280px) {
+    .News iframe.video {
+        height: 140px;
+    }
+}
+
+.Carte center {
+    margin: 4px 12px 26px;
+}
+
+.Carte img {
+    max-width: 100% !important;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.News {
+    text-align: center;
+    margin: 0 0 0;
+    max-width: 470px;
+}
+
+/* .News img { width:100%; max-width:470px; } */
+.News img {
+    max-width: 100%;
+}
+
+.EnBas {
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 32px;
+}
+
+.EnBas a span {
+    display: none;
+}
+
+.Icones {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.Icones .Btn {
+    color: #000;
+}
+
+.Icones .Btn:hover {
+    color: #000;
+}
+
+.photo img {
+    margin: 0;
+    /*
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+*/
+}
+
+
+
+
+
+
+
+/*
+.CarteDemo { z-index:222; position: fixed; bottom:0; left:0; right:0; text-align:center; background:#336E80; text-decoration:none; }
+.CarteDemo span { color:#fff; display:block; padding:11px 0 4px; text-align:center; font-weight:normal; font-size:14pt; font-family:"IBM Plex Sans" }
+*/
+strong {
+    font-family: "IBM Plex Sans";
+    font-weight: 700;
+}
+
+/*
+.CarteDemo { z-index:1; text-align:center; background:linear-gradient(#000000,#000000cc); text-decoration:none; opacity:1; position: fixed; width: 100%; height: 54px; display: block; top:0; left:0; right:0; }
+.CarteDemo span { color:#fff; display:block; padding:9px 0 5px; text-align:center; font-weight:normal; font-size:14pt; font-family:"IBM Plex Sans", arial, sans-serif; }
+*/
+
+.CarteDemo {
+    z-index: 1;
+    text-align: center;
+    background: linear-gradient(#000000, #000000cc);
+    text-decoration: none;
+    opacity: 1;
+    position: fixed;
+    width: 29px;
+    display: block;
+    left: 0;
+    /* bottom: 0; */
+    top: 50%;
+    /* transform: rotate(270deg); */
+    height: 116px;
+    display: flex;
+    border-radius: 0 5px 5px 0;
+    margin-top: -58px;
+}
+
+.CarteDemo span {
+    margin: 0;
+    z-index: 1512;
+    color: #fff;
+    /* display: block; */
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14pt;
+    font-family: "IBM Plex Sans", arial, sans-serif;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+}
+
+.CarteDemo span img {
+    transform: rotate(270deg);
+    margin: 0 0 -3px -36px;
+}
+
+.footbox {
+    margin: 2px 17px 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footbox.fullscreen {
+    margin: 0;
+}
+
+.footer,
+.footer a,
+.footer a span {
+    font-family: "IBM Plex Sans";
+    font-size: 14pt;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none !important;
+}
+
+.aucasoufullscreen {
+    clear: both;
+    height: 1px;
+}
+
+.Nom {
+    font-family: "IBM Plex Sans";
+    font-size: 27px;
+    text-decoration: none;
+    color: #000;
+    line-height: 40px;
+    margin: 0;
+}
+
+.Titre {
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    text-decoration: none;
+    color: #777;
+}
+
+.Division {
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    text-decoration: none;
+    color: #777;
+}
+
+.Soustitre {
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.Company {
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    font-size: 22px;
+    text-decoration: none;
+    color: #777;
+}
+
+.Intro {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 18px;
+    margin: 0 0 24px;
+}
+
+.Outro {
+    font-family: "IBM Plex Sans";
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 20px;
+    margin: 23px 0 23px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0 17px;
+}
+
+.Outro.Big {
+    font-family: "IBM Plex Sans";
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 16px;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0 17px;
+}
+
+.Outro.XL {
+    font-family: "IBM Plex Sans";
+    font-size: 10px;
+    text-decoration: none;
+    line-height: 12px;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.Map,
+.Tel,
+.Web,
+.Mob,
+.Email {
+    padding: 5px 0 7px;
+    clear: both;
+    font-family: "IBM Plex Sans";
+}
+
+
+@media (min-width:761px) {
+
+    .Tel a em,
+    .Web a em,
+    .Email a em {
+        font-style: normal;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        word-wrap: normal;
+        display: inline-block;
+        text-overflow: ellipsis;
+        width: auto;
+        max-width: 300px;
+        line-height: 30px;
+        margin: 0 0 -7px;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .Tel a em slide,
+    .Web a em slide,
+    .Email a em slide {
+        display: inline-block;
+        min-width: 300px;
+        animation-direction: alternate;
+        animation-play-state: paused;
+        transition: animation-play-state 0.2s;
+        animation-play-state: running;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        10% {
+            transform: translate(0, 0);
+        }
+
+        90% {
+            transform: translate(calc(-100% + 300px), 0);
+        }
+
+        100% {
+            transform: translate(calc(-100% + 300px), 0);
+        }
+    }
+}
+
+.powered-by {
+    margin: 7px auto;
+    opacity: 0.33;
+    transition-duration: 0.3s;
+}
+
+.powered-by:hover {
+    opacity: 1;
+}
+
+@media (max-width:760px) {
+
+    .Tel a em,
+    .Web a em,
+    .Email a em {
+        font-style: normal;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        word-wrap: normal;
+        display: inline-block;
+        text-overflow: ellipsis;
+        width: auto;
+        max-width: 300px;
+        line-height: 30px;
+        margin: 0 0 -7px;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .Tel a em slide,
+    .Web a em slide,
+    .Email a em slide {
+        display: inline-block;
+        min-width: 300px;
+        animation-direction: alternate;
+        animation-play-state: paused;
+        transition: animation-play-state 0.2s;
+        animation-play-state: running;
+    }
+    /*
+        animation: marquee 5s linear infinite;
+    */
+
+
+    @keyframes marquee {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        10% {
+            transform: translate(0, 0);
+        }
+
+        90% {
+            transform: translate(calc(-100% + 260px), 0);
+        }
+
+        100% {
+            transform: translate(calc(-100% + 260px), 0);
+        }
+    }
+}
+
+
+.Vcard {
+    margin: 0 auto 0;
+    width: auto;
+    display: table;
+    line-height: 30px;
+}
+
+.Vcard.photo {
+    margin: 30px auto;
+}
+
+.Vcard.photo.fullscreen {
+    margin: 0 0 30px;
+}
+
+.Vcard.Entete,
+.Vcard.Web {
+    text-align: center;
+    padding: 0 15px 10px;
+}
+
+.Vcard.Link {
+    margin-top: 0;
+    width: 100%;
+}
+
+.Vcard.Intro {
+    text-align: center;
+    padding: 10px 17px 34px;
+}
+
+@media (max-width:548px) {
+    .Vcard {
+        width: auto;
+        display: table;
+        line-height: 25px;
+    }
+
+    .Soustitre {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .Intro {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+/*°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸*/
+
+    .Outro {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .Map a {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width:448px) {
+    .Vcard {
+        width: auto;
+        display: table;
+        line-height: 20px;
+    }
+
+    .footer,
+    .footer a,
+    .footer a span {
+        font-size: 12pt;
+    }
+}
+
+.Map small,
+.Map a,
+.Tel a,
+.Web a,
+.Mob a,
+.Email a {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    padding-bottom: 0px;
+}
+
+.Map small,
+.Tel small,
+.Web small,
+.Mob small,
+.Email small {
+    margin: 0 10px 0 -10px;
+    font-family: "IBM Plex Sans";
+    font-size: 22px;
+    line-height: 32px;
+    width: 30px;
+    text-align: center;
+    float: left;
+    color: #bbbbbb;
+    font-weight: 300;
+}
+
+.Icones {
+    padding: 10px;
+}
+
+.Icones a {
+    margin: 0 5px;
+}
+
+.Map a {
+    display: inline-flex;
+    line-height: 23px;
+}
+
+.Map em {
+    font-style: inherit;
+    margin: 3px 0 0;
+}
+
+.Email i,
+.Mob i,
+.Tel i,
+.Web i,
+.Map i {
+    font-size: 22px !important;
+}
+
+.Parrainage {
+    margin: 0 -38px 0 -39px;
+}
+
+.Chomp1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 60px 0 0;
+}
+
+.Chomp1 .content {
+    font-family: "IBM Plex Sans";
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    line-height: 15px;
+    margin: -15px 0 15px;
+    max-width: 283px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 21px;
+}
+
+.Chomp1 .content u {
+    padding-bottom: 0;
+}
+
+.Chomp1 {
+    z-index: 4421;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    margin-top: -230px;
+}
+
+.Chomp1 .content img {
+    margin: 20px;
+}
+
+.Chomp1 .content p {
+    margin: 0;
+}
+
+.Chomp1 .content b {
+    display: none;
+}
+
+.Chomp1 {
+    display: none;
+}
+
+/* width:100%; position:fixed; top:0; right:0; z-index:421;} */
+
+.Chomp1 input {
+    font-family: "IBM Plex Sans";
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    line-height: 15px;
+    margin: 0;
+    padding: 4px;
+    background: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 21px;
+    text-align: left;
+    width: 100%;
+}
+
+.Chomp1 a.btn {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 1px 5px;
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.Chomp1 a.btn i {
+    font-size: 14px;
+}
+
+@media (min-width:861px) {
+    .Carte.avecNews {
+        position: relative;
+        top: 25px;
+        left: 0;
+        right: 0;
+        margin: 0 auto 0;
+    }
+
+    /* .Nom, .Titre, .Company { margin-left:15px; } */
+    /*	.Chomp2 {width:69%; margin-top:0; float:left; -webkit-transition-duration: 1s; transition-duration: 1s; } */
+    .Chomp2.en3d {
+        transform-origin: center 50% 0;
+        transform: matrix3d(0.9302, 0, 0.073675, 5.73675e-05, 0.00069055, 0.999829, 0.184671, 1.4671e-05, -0.373611, -0.1848, 0.999131, 0.000999, 0, 0, 0, 1) rotateX(-9deg) rotateY(-8deg) rotateZ(-2deg);
+    }
+}
+
+@media (min-width:1355px) {
+    /* .Chomp2 {width:79%; margin-top:0; float:left; -webkit-transition-duration: 1s; transition-duration: 1s; } */
+}
+
+.News.Haut {
+    margin: 0 auto 12px;
+}
+
+@media (min-width:760px) {
+    .News.Haut {
+        margin: 0 auto;
+    }
+}
+
+.News.Bas {
+    margin: 12px 16px 0;
+}
+
+.EnBas .Icones .Bloc {
+    display: none;
+}
+
+.bigI {
+    padding: 0 0 7px;
+    margin: 0 -20px 0;
+}
+
+.bigI i {
+    font-size: 32px;
+}
+
+.bigI small i {
+    font-size: 22px;
+}
+
+.pin {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px;
+}
+
+.pin a {
+    display: block;
+    padding: 9px 12px 12px;
+    text-decoration: none;
+}
+
+span.fa-stack {
+    width: 1em;
+    height: 1em;
+    line-height: 0.8em;
+    display: block;
+    padding-left: 2px;
+}
+
+span.stack-txt {
+    color: #000;
+    font-size: 0.3em;
+    line-height: 1em;
+    font-family: "IBM Plex Sans";
+    display: block;
+}
+
+i.fatxt {
+    color: #fff !important;
+    font-size: 0.3em;
+    font-family: "IBM Plex Sans";
+}
+
+.Carte .footer {
+    text-align: center;
+    margin: 0;
+}
+
+.Carte .footer img {
+    max-height: 58px !important;
+    margin: 4px auto
+}
+
+.Carte .footer .dol img {
+    max-height: none !important;
+}
+
+.Carte .footer img.texte {
+    float: left;
+    margin: 0 8% 15px 0;
+}
+
+.Carte .footer a,
+.Carte .footer a span {
+    display: inline-block;
+    margin: 0;
+}
+
+@media (max-width:760px) {
+    .Carte .footer {
+        text-align: center;
+        margin: 0;
+    }
+
+    .Carte .footer img {
+        max-height: 58px !important;
+    }
+}
+
+.Carte .footer img.bigger {
+    display: block;
+    margin: 33px auto 0;
+    max-height: 98px !important;
+}
+
+.Carte .footer img.biggest {
+    display: block;
+    margin: 0 auto 0;
+    max-height: 100% !important;
+    max-width: 100% !important;
+}
+
+@-webkit-keyframes badbounce {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+
+    10% {
+        -webkit-transform: translateY(6px);
+    }
+
+    30% {
+        -webkit-transform: translateY(-4px);
+    }
+
+    70% {
+        -webkit-transform: translateY(3px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-2px);
+    }
+}
+
+@-moz-keyframes badbounce {
+
+    0%,
+    100% {
+        -moz-transform: translateY(0px);
+    }
+
+    10% {
+        -moz-transform: translateY(6px);
+    }
+
+    30% {
+        -moz-transform: translateY(-4px);
+    }
+
+    70% {
+        -moz-transform: translateY(3px);
+    }
+
+    90% {
+        -moz-transform: translateY(-2px);
+    }
+}
+
+@keyframes badbounce {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    10% {
+        -webkit-transform: translateY(6px);
+        -moz-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        -o-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    30% {
+        -webkit-transform: translateY(-4px);
+        -moz-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    70% {
+        -webkit-transform: translateY(3px);
+        -moz-transform: translateY(3px);
+        -ms-transform: translateY(3px);
+        -o-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-2px);
+        -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        -o-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+
+/*
+.ss_animate {
+  -webkit-animation: badbounce 1s linear;
+  -moz-animation: badbounce 1s linear;
+  animation: badbounce 1s linear;
+}
+*/
+
+#paypalbtn {
+    margin: 23px auto 55px;
+}
+
+#GDPRCookie {
+    display: none;
+    z-index: 22222;
+    background: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 1));
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 0px;
+    bottom: 0;
+    box-shadow: #00000079 0 0 18px;
+    margin: 0 auto;
+    border-radius: 0;
+    align-items: center;
+    align-content: center;
+}
+
+#GDPRCookie .Notes {
+    text-align: center;
+    font-family: "IBM Plex Sans";
+    max-width: 521px;
+    margin: 0 auto;
+}
+
+#GDPRCookie .Notes .ec-btns {
+    text-align: center;
+}
+
+#GDPRCookie .Notes a {
+    color: #fff;
+}
+
+#GDPRCookie .Notes .info-block {
+    color: #fff;
+    text-align: justify;
+    display: inline-block;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 14px;
+}
+
+#GDPRCookie .Notes .info-block p {
+    color: #fff;
+    margin: 0 0 7px;
+}
+
+#GDPRCookie .Notes .info-block img {
+    width: 150px;
+}
+
+#GDPRCookie .Notes a.ec-accept {
+    display: block;
+    margin: 17px 15px;
+    background: #0008;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 7px 12px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#GDPRCookie .Notes a.ec-empty {
+    color: #fff;
+    font-size: 12px;
+}
+
+#GDPRCookie .Notes a.ec-empty b {
+    font-size: 15px;
+}
+
+/* The container */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 33px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkbox-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover input ~ .checkbox-mark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkbox-mark {
+    background-color: green;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkbox-mark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkbox-mark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .RSS {
+  }
+  
+  .RSS div a {
+    font-size: 12px !important;
+    display: block !important;
+    margin: 0 0 24px !important;
+    line-height: 15px !important;
+  }
+  .RSS div a b {
+    display: block !important;
+    line-height: 23px !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin: 8px 0 0 !important;
+  }
+
+  .RSS div a small {
+    font-size: 12px !important;
+    display: block !important;
+    margin: 0 0 24px !important;
+  }
+  .RSS div a small p {
+    margin: 0 0 24px !important;
+  }
