@@ -22,7 +22,7 @@ export const Layout = ({ children, className }: LayoutProps) => {
 
           <a
             href="tel:0365889783"
-            className="flex items-center gap-4 text-xs md:text-sm w-50 md:w-60"
+            className="flex items-center gap-4 text-xs md:text-sm w-40 md:w-50"
             aria-label="Numéro de téléphone"
             title="Numéro de téléphone"
           >
