@@ -4,3 +4,4 @@ export * from "./appointmentForm";
 export * from "./banner";
 export * from "./faq";
 export * from "./modal";
+export * from "./popularServices";

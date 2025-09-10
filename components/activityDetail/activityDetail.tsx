@@ -5,6 +5,7 @@ import { Container } from "../container";
 import { PageTitle } from "../pageTitle";
 import { Button } from "../button";
 import { ActivityFAQ } from "../activityFAQ";
+import { PopularServices } from "../popularServices";
 import Link from "next/link";
 
 interface ActivityDetailProps {
@@ -154,6 +155,13 @@ export function ActivityDetail({ activity }: ActivityDetailProps) {
           </div>
         </Container>
       </section>
+
+      {/* Popular Services Section */}
+      <PopularServices
+        services={activity.services}
+        activityName={activity.label}
+        activityColor={activity.color}
+      />
 
       {/* FAQ Section */}
       <ActivityFAQ faqData={activity.faq} activityName={activity.label} />

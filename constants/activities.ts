@@ -6,6 +6,13 @@ export type FAQItem = {
   answer: string | string[] | React.ReactElement;
 };
 
+export type ServiceItem = {
+  id: string;
+  title: string;
+  description: string;
+  features?: string[];
+};
+
 export type Activity = {
   id: string;
   name: string;
@@ -20,6 +27,7 @@ export type Activity = {
   description: string;
   bigDescription: string;
   faq: FAQItem[];
+  services: ServiceItem[];
 };
 
 export const activities: Activity[] = [
@@ -55,6 +63,80 @@ export const activities: Activity[] = [
         question: "Proposez-vous des contrats d'entretien pour la plomberie ?",
         answer:
           "Nous proposons des contrats d'entretien annuels comprenant la vérification de vos installations, le détartrage des équipements et un dépannage prioritaire en cas de problème.",
+      },
+    ],
+    services: [
+      {
+        id: "plumbing-service-1",
+        title: "Installation et rénovation de salles de bain",
+        description:
+          "Rénovation complète de votre salle de bain avec des équipements modernes et conformes aux normes.",
+        features: [
+          "Pose de sanitaires",
+          "Installation de douche à l'italienne",
+          "Carrelage et faïence",
+          "Robinetterie haut de gamme",
+        ],
+      },
+      {
+        id: "plumbing-service-2",
+        title: "Détection et réparation de fuites d'eau",
+        description:
+          "Intervention rapide pour localiser et réparer tous types de fuites, même les plus difficiles à détecter.",
+        features: [
+          "Détection par caméra",
+          "Réparation sans casse",
+          "Recherche de fuite souterraine",
+          "Dépannage 24h/24",
+        ],
+      },
+      {
+        id: "plumbing-service-3",
+        title: "Installation et entretien de chauffe-eau",
+        description:
+          "Installation, réparation et entretien de tous types de chauffe-eau pour un confort optimal.",
+        features: [
+          "Chauffe-eau électrique",
+          "Chauffe-eau gaz",
+          "Ballon thermodynamique",
+          "Entretien préventif",
+        ],
+      },
+      {
+        id: "plumbing-service-4",
+        title: "Pose et remplacement de sanitaires",
+        description:
+          "Installation et remplacement de tous vos équipements sanitaires avec garantie qualité.",
+        features: [
+          "WC suspendus",
+          "Lavabos design",
+          "Douches et baignoires",
+          "Accessoires PMR",
+        ],
+      },
+      {
+        id: "plumbing-service-5",
+        title: "Débouchage et entretien de canalisations",
+        description:
+          "Débouchage professionnel et entretien préventif de vos canalisations et évacuations.",
+        features: [
+          "Débouchage haute pression",
+          "Inspection vidéo",
+          "Curage préventif",
+          "Traitement anti-odeurs",
+        ],
+      },
+      {
+        id: "plumbing-service-6",
+        title: "Adoucisseurs d'eau et systèmes de filtration",
+        description:
+          "Installation de systèmes de traitement de l'eau pour améliorer sa qualité et protéger vos installations.",
+        features: [
+          "Adoucisseurs d'eau",
+          "Filtres anti-calcaire",
+          "Osmoseurs",
+          "Maintenance incluse",
+        ],
       },
     ],
   },
@@ -95,6 +177,80 @@ export const activities: Activity[] = [
           "Oui, nous sommes spécialisés dans l'installation de bornes de recharge domestiques et professionnelles. Nous vous accompagnons dans le choix de la solution adaptée à vos besoins.",
       },
     ],
+    services: [
+      {
+        id: "electricity-service-1",
+        title: "Mise aux normes électriques",
+        description:
+          "Mise en conformité de votre installation électrique selon les normes NF C 15-100 pour votre sécurité.",
+        features: [
+          "Diagnostic électrique complet",
+          "Remplacement du tableau",
+          "Mise à la terre",
+          "Certification Consuel",
+        ],
+      },
+      {
+        id: "electricity-service-2",
+        title: "Installation de bornes de recharge",
+        description:
+          "Installation de bornes de recharge pour véhicules électriques à domicile ou en entreprise.",
+        features: [
+          "Borne 7kW à 22kW",
+          "Wallbox intelligente",
+          "Installation sécurisée",
+          "Accompagnement aux aides",
+        ],
+      },
+      {
+        id: "electricity-service-3",
+        title: "Éclairage et domotique",
+        description:
+          "Installation d'éclairages modernes et systèmes domotiques pour votre confort.",
+        features: [
+          "LED basse consommation",
+          "Éclairage connecté",
+          "Détecteurs de mouvement",
+          "Variateurs intelligents",
+        ],
+      },
+      {
+        id: "electricity-service-4",
+        title: "Prises et circuits électriques",
+        description:
+          "Ajout et rénovation de prises électriques et circuits pour répondre à vos nouveaux besoins.",
+        features: [
+          "Prises USB intégrées",
+          "Circuits spécialisés",
+          "Protection différentielle",
+          "Prises étanches",
+        ],
+      },
+      {
+        id: "electricity-service-5",
+        title: "Dépannage électrique d'urgence",
+        description:
+          "Intervention rapide 24h/24 pour tous vos problèmes électriques urgents.",
+        features: [
+          "Panne de courant",
+          "Court-circuit",
+          "Disjoncteur qui saute",
+          "Intervention immédiate",
+        ],
+      },
+      {
+        id: "electricity-service-6",
+        title: "Chauffage électrique",
+        description:
+          "Installation et maintenance de systèmes de chauffage électrique performants.",
+        features: [
+          "Radiateurs connectés",
+          "Plancher chauffant",
+          "Convecteurs design",
+          "Programmation intelligente",
+        ],
+      },
+    ],
   },
   {
     id: "chauffage",
@@ -128,6 +284,80 @@ export const activities: Activity[] = [
         question: "Quels sont les avantages d'une pompe à chaleur ?",
         answer:
           "La pompe à chaleur permet de réduire vos factures de chauffage jusqu'à 70% et bénéficie d'aides financières. C'est une solution écologique et économique sur le long terme.",
+      },
+    ],
+    services: [
+      {
+        id: "chauffage-service-1",
+        title: "Installation de pompes à chaleur",
+        description:
+          "Installation de pompes à chaleur air-air ou air-eau pour un chauffage écologique et économique.",
+        features: [
+          "PAC air-air",
+          "PAC air-eau",
+          "Installation certifiée",
+          "Aides financières",
+        ],
+      },
+      {
+        id: "chauffage-service-2",
+        title: "Entretien et dépannage de chaudières",
+        description:
+          "Entretien annuel obligatoire et dépannage de tous types de chaudières gaz et fioul.",
+        features: [
+          "Entretien préventif",
+          "Réparation toutes marques",
+          "Pièces d'origine",
+          "Intervention rapide",
+        ],
+      },
+      {
+        id: "chauffage-service-3",
+        title: "Installation de chaudières",
+        description:
+          "Installation de chaudières haute performance pour optimiser votre confort et vos économies.",
+        features: [
+          "Chaudière condensation",
+          "Chaudière hybride",
+          "Chaudière biomasse",
+          "Garantie constructeur",
+        ],
+      },
+      {
+        id: "chauffage-service-4",
+        title: "Radiateurs et plancher chauffant",
+        description:
+          "Installation et remplacement de radiateurs et systèmes de plancher chauffant.",
+        features: [
+          "Radiateurs design",
+          "Plancher hydraulique",
+          "Régulation zone par zone",
+          "Émetteurs basse température",
+        ],
+      },
+      {
+        id: "chauffage-service-5",
+        title: "Systèmes de régulation",
+        description:
+          "Installation de thermostats intelligents et systèmes de régulation pour optimiser votre consommation.",
+        features: [
+          "Thermostat connecté",
+          "Programmation avancée",
+          "Régulation multizone",
+          "Économies garanties",
+        ],
+      },
+      {
+        id: "chauffage-service-6",
+        title: "Maintenance préventive",
+        description:
+          "Contrats d'entretien pour assurer le bon fonctionnement de vos installations de chauffage.",
+        features: [
+          "Visite annuelle",
+          "Nettoyage complet",
+          "Réglages optimaux",
+          "Dépannage prioritaire",
+        ],
       },
     ],
   },
@@ -165,6 +395,80 @@ export const activities: Activity[] = [
         question: "L'entretien des panneaux solaires est-il nécessaire ?",
         answer:
           "Les panneaux solaires nécessitent peu d'entretien. Un nettoyage annuel et une vérification de l'installation suffisent généralement. Nous proposons des contrats de maintenance pour optimiser leur performance.",
+      },
+    ],
+    services: [
+      {
+        id: "renewable-service-1",
+        title: "Installation de panneaux solaires photovoltaïques",
+        description:
+          "Installation complète de panneaux solaires pour produire votre propre électricité verte.",
+        features: [
+          "Panneaux haute performance",
+          "Onduleurs dernière génération",
+          "Monitoring en temps réel",
+          "Garantie 25 ans",
+        ],
+      },
+      {
+        id: "renewable-service-2",
+        title: "Chauffe-eau solaire",
+        description:
+          "Installation de chauffe-eau solaires pour réduire vos factures d'eau chaude sanitaire.",
+        features: [
+          "Capteurs thermiques",
+          "Ballon solaire",
+          "Système d'appoint",
+          "Économies jusqu'à 70%",
+        ],
+      },
+      {
+        id: "renewable-service-3",
+        title: "Pompes à chaleur écologiques",
+        description:
+          "Installation de pompes à chaleur utilisant les énergies renouvelables de l'air ou du sol.",
+        features: [
+          "PAC géothermique",
+          "PAC aérothermique",
+          "COP élevé",
+          "Éligible aux aides",
+        ],
+      },
+      {
+        id: "renewable-service-4",
+        title: "Systèmes de stockage d'énergie",
+        description:
+          "Installation de batteries pour stocker l'énergie produite par vos panneaux solaires.",
+        features: [
+          "Batteries lithium",
+          "Gestion intelligente",
+          "Autoconsommation optimisée",
+          "Autonomie énergétique",
+        ],
+      },
+      {
+        id: "renewable-service-5",
+        title: "Audit énergétique",
+        description:
+          "Évaluation complète de votre consommation pour optimiser vos installations renouvelables.",
+        features: [
+          "Bilan énergétique",
+          "Préconisations personnalisées",
+          "Calcul de rentabilité",
+          "Accompagnement aux aides",
+        ],
+      },
+      {
+        id: "renewable-service-6",
+        title: "Maintenance et optimisation",
+        description:
+          "Entretien et optimisation de vos installations d'énergie renouvelable pour une performance maximale.",
+        features: [
+          "Maintenance préventive",
+          "Nettoyage panneaux",
+          "Vérification onduleurs",
+          "Optimisation production",
+        ],
       },
     ],
   },
