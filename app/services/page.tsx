@@ -108,8 +108,8 @@ export default function ServicesPage() {
                       </ul>
                     </div>
                   </div>
-                  {/* Zone d'image/illustration */}
-                  <div className="flex-1 max-w-md">
+
+                  <div className="flex-1 max-w-md hidden lg:block">
                     <div
                       className="relative w-full h-80 rounded-2xl flex items-center justify-center"
                       style={{
