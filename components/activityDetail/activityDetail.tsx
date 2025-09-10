@@ -5,6 +5,7 @@ import { Container } from "../container";
 import { PageTitle } from "../pageTitle";
 import { Button } from "../button";
 import { ActivityFAQ } from "../activityFAQ";
+import Link from "next/link";
 
 interface ActivityDetailProps {
   activity: Activity;
@@ -35,8 +36,12 @@ export function ActivityDetail({ activity }: ActivityDetailProps) {
             />
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button>Demander un devis gratuit</Button>
-              <Button variant="outline">Contactez-nous</Button>
+              <Link href="/rendez-vous">
+                <Button>Demander un devis gratuit</Button>
+              </Link>
+              <Link href="/rendez-vous">
+                <Button variant="outline">Contactez-nous</Button>
+              </Link>
             </div>
           </div>
         </Container>
@@ -142,7 +147,9 @@ export function ActivityDetail({ activity }: ActivityDetailProps) {
                 </div>
               </div>
 
-              <Button className="w-full mt-6">Prendre rendez-vous</Button>
+              <Link href="/rendez-vous">
+                <Button className="w-full mt-6">Prendre rendez-vous</Button>
+              </Link>
             </div>
           </div>
         </Container>

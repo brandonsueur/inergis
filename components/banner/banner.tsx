@@ -57,7 +57,7 @@ export const Banner = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="mailto:devis@inergis.fr">
+            <Link href="/rendez-vous">
               <Button>Demandez votre devis gratuit</Button>
             </Link>
             <Button

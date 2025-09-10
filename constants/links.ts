@@ -12,7 +12,7 @@ export type NavigationLink = {
 export const navigationsLinks: NavigationLink[] = [
   { href: "#services", label: "Nos services" },
   { href: "mailto:contact@inergis.fr", label: "Contact" },
-  { href: "mailto:devis@inergis.fr", label: "Un devis gratuit ?" },
+  { href: "/rendez-vous", label: "Un devis gratuit ?" },
 ];
 
 export const footerConfig = {

@@ -59,7 +59,7 @@ export const Menu = () => {
         {/* Navigation pour desktop */}
         <nav className="hidden md:flex items-center space-x-8 font-ca-slalom">
           {navigationsLinks.map((link) => {
-            if (link.href.startsWith("mailto:devis")) {
+            if (link.href === "/rendez-vous") {
               return (
                 <Link key={link.href} href={link.href}>
                   <Button>{link.label}</Button>
@@ -105,18 +105,15 @@ export const Menu = () => {
           >
             <nav className="flex flex-col space-y-6 items-center">
               {navigationsLinks.map((link) => {
-                if (link.href === "/devis") {
+                if (link.href === "/rendez-vous") {
                   return (
-                    <Button
+                    <Link
                       key={link.href}
-                      onClick={() => {
-                        setMobileMenuOpen(false);
-                        // Handle button click
-                      }}
-                      className="w-full"
+                      href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
                     >
-                      {link.label}
-                    </Button>
+                      <Button className="w-full">{link.label}</Button>
+                    </Link>
                   );
                 }
 
