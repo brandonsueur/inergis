@@ -58,7 +58,7 @@ export const Services: FC = () => {
               return (
                 <motion.div
                   key={index}
-                  className="relative p-6 flex flex-col items-start cursor-pointer"
+                  className="relative p-6 flex flex-col items-start cursor-pointer group"
                   variants={itemVariants}
                   whileHover={{ transition: { duration: 0.2 } }}
                   onClick={() => {
@@ -81,6 +81,15 @@ export const Services: FC = () => {
                   <p className="text-base font-epilogue text-gray-500 leading-relaxed">
                     {value.bigDescription}
                   </p>
+
+                  {/* Indicateur de clic - toujours visible */}
+                  <div
+                    className="mt-4 text-sm font-medium flex items-center gap-1"
+                    style={{ color: value.color }}
+                  >
+                    En savoir plus
+                    <span className="text-lg">→</span>
+                  </div>
 
                   <motion.span
                     className="absolute top-0 left-0 w-full h-full rounded-lg border-2 border-transparent"
