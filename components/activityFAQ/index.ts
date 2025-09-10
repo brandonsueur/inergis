@@ -1,0 +1,1 @@
+export { ActivityFAQ } from "./activityFAQ";

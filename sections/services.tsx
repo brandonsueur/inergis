@@ -5,6 +5,7 @@ import { SectionTitle } from "@/components/sectionTitle";
 import { activities } from "@/constants/activities";
 import { FC, useRef } from "react";
 import { motion, useInView, Variants } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 // Définition des variantes d'animation
 const containerVariants: Variants = {
@@ -32,6 +33,7 @@ const itemVariants: Variants = {
 
 export const Services: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const router = useRouter();
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
@@ -56,9 +58,12 @@ export const Services: FC = () => {
               return (
                 <motion.div
                   key={index}
-                  className="relative p-6 flex flex-col items-start"
+                  className="relative p-6 flex flex-col items-start cursor-pointer"
                   variants={itemVariants}
                   whileHover={{ transition: { duration: 0.2 } }}
+                  onClick={() => {
+                    router.push(`/${value.link}`);
+                  }}
                 >
                   <div
                     className={`flex w-16 h-16 rounded-full justify-center items-center`}
@@ -76,6 +81,15 @@ export const Services: FC = () => {
                   <p className="text-base font-epilogue text-gray-500 leading-relaxed">
                     {value.bigDescription}
                   </p>
+
+                  <motion.span
+                    className="absolute top-0 left-0 w-full h-full rounded-lg border-2 border-transparent"
+                    whileHover={{
+                      borderColor: value.color,
+                      scale: 1.05,
+                      boxShadow: `0 10px 20px rgba(0, 0, 0, 0.1)`,
+                    }}
+                  />
                 </motion.div>
               );
             })}
