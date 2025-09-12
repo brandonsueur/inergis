@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { metadata as defaultMetadata } from "@/constants/metadata";
 
 import { project } from "@/constants";
@@ -47,7 +48,23 @@ export default function RootLayout({
         <title>{project.title}</title>
       </head>
 
-      <body className="antialiased font-airbnb">{children}</body>
+      <body className="antialiased font-airbnb">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QFV66TZX3P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QFV66TZX3P');
+          `}
+        </Script>
+
+        {children}
+      </body>
     </html>
   );
 }
