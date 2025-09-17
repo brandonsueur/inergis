@@ -58,8 +58,11 @@ export const Menu = () => {
 
         {/* Navigation pour desktop */}
         <nav className="hidden md:flex items-center space-x-8 font-ca-slalom">
-          {navigationsLinks.map((link) => {
-            if (link.href === "/rendez-vous") {
+          {navigationsLinks.map((link, i) => {
+            if (
+              link.href === "/rendez-vous" &&
+              i === navigationsLinks.length - 1
+            ) {
               return (
                 <Link key={link.href} href={link.href}>
                   <Button>{link.label}</Button>
