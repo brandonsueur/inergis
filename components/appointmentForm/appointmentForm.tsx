@@ -113,7 +113,11 @@ export function AppointmentForm() {
           <div className="grid lg:grid-cols-3 gap-12 mt-12">
             {/* Formulaire */}
             <div className="lg:col-span-2">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action="https://formspree.io/f/mjkeqpoy"
+                method="POST"
+                className="space-y-6"
+              >
                 {/* Informations personnelles */}
                 <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                   <h3 className="text-xl font-bold text-black mb-6 font-ca-slalom">
