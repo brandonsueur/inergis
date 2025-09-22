@@ -42,36 +42,6 @@ export function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch("https://formspree.io/f/xldpreny", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          _subject: `Nouveau contact de ${formData.firstName} ${formData.lastName}`,
-        }),
-      });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        setFormData(initialFormData);
-      } else {
-        throw new Error("Erreur lors de l'envoi");
-      }
-    } catch (error) {
-      console.error("Erreur:", error);
-      alert("Une erreur s'est produite. Veuillez réessayer.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   if (isSubmitted) {
     return (
       <section className="py-16 px-6 mt-32 min-h-screen flex items-center">
@@ -210,7 +180,11 @@ export function ContactForm() {
                   Envoyez-nous un message
                 </h3>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  action="https://formspree.io/f/xldpreny"
+                  method="POST"
+                  className="space-y-6"
+                >
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label
@@ -250,7 +224,6 @@ export function ContactForm() {
                       />
                     </div>
                   </div>
-
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label
@@ -289,7 +262,6 @@ export function ContactForm() {
                       />
                     </div>
                   </div>
-
                   <div>
                     <label
                       htmlFor="subject"
@@ -323,7 +295,6 @@ export function ContactForm() {
                       <option value="autre">Autre</option>
                     </select>
                   </div>
-
                   <div>
                     <label
                       htmlFor="message"
@@ -342,7 +313,6 @@ export function ContactForm() {
                       placeholder="Décrivez votre demande..."
                     />
                   </div>
-
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button
                       type="submit"
@@ -363,7 +333,6 @@ export function ContactForm() {
                       Prendre rendez-vous
                     </Button>
                   </div>
-
                   <p className="text-sm text-gray-500 font-epilogue">
                     * Champs obligatoires. Vos données sont protégées et ne
                     seront utilisées que pour vous contacter.
