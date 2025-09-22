@@ -3,8 +3,8 @@
 import { Layout } from "@/components/layout";
 import { ActivityDetail } from "@/components/activityDetail";
 import { activities } from "@/constants/activities";
-import { metadata } from "@/utils/metadata";
 import { notFound } from "next/navigation";
+import { metadata } from "@/utils/metadata";
 
 const activity = activities.find((a) => a.name === "énergie renouvelable");
 

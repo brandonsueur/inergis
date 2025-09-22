@@ -4,7 +4,7 @@ import { metadata } from "@/utils/metadata";
 
 export const generateMetadata = () => {
   return metadata(
-    "Contact - Inergis",
+    "Contact",
     "Contactez nos experts en électricité, plomberie, chauffage et énergies renouvelables. Devis gratuit, intervention rapide dans les Hauts-de-France."
   );
 };
