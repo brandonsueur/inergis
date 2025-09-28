@@ -37,7 +37,7 @@ export const footerConfig = {
         },
         {
           label: "LinkedIn",
-          href: "https://www.linkedin.com/company/inergis",
+          href: "https://www.linkedin.com/in/sarl-inergis-59a70a382/",
         },
       ],
     },
